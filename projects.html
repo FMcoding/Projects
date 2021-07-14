@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: "Arial";
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(hsl(292, 54%, 43%), hsl(59, 74%, 47%));
+            height: 100vh;
+        }
+
+        .content {
+            width: 30rem;
+            height: 20rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        li {
+            line-height: 2;
+        }
+        
+        @media screen and (max-width: 1250px) and (min-width: 750px) {
+            .content {
+                width: 40rem;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 3rem;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            .content {
+                width: 20rem;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Projects done on <a href="https://www.frontendmentor.io/solutions">Frontmentor</a>:</h1>
+            <ul>
+                <li><a href="https://fmcoding.github.io/TestimonialGrid/">Testimonial Grid</a></li>
+                <li><a href="https://fmcoding.github.io/MediaDashboard/">Media Dashboard</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
